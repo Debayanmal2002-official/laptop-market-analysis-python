@@ -37,14 +37,22 @@ Created analytical features including:
 ## Key Insights from EDA
 
 - **Mid-range (45K–85K)** laptops dominate the market
+  
 ![Price_range_Distribution](plots/price_range_pie.png)
+
 - Major price jumps occur at **16GB RAM** and **24–32GB RAM**
+
 ![Price_by_RAM_Categories](plots/ram_vs_price.png) 
+
 - Display quality strongly influences pricing (**QHD has highest median price**)
+  
 ![Median_Price_by_Resolution_Type](plots/median_resolution.png)
+
 - Box plot of top 3 processor brand
+
 ![Top_3_Processor_Brand_Box_Plot](plots/Specs_score_vs_Processsor_Brand.png)
-- Most common configuration:  **[Brand] + 16GB RAM + SSD**, representing **X%** of listings  
+
+- Most common configuration:  **[Brand] + 16GB RAM + SSD**, representing **X%** of listings (actual value computed in pyfile) 
 - **65.78%** of laptops feature a **dedicated GPU** 
 
 ---
