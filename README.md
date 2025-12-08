@@ -36,23 +36,33 @@ Created analytical features including:
 ---
 ## Key Insights from EDA
 
-### 1) **Mid-range (45K–85K)** laptops dominate the market
+### 1) **Laptop Market Share according to Price Range**
   
 ![Price_range_Distribution](plots/price_range_pie.png)
 
-### 2) Major price jumps occur at **16GB RAM** and **24–32GB RAM**
+- The laptop market is heavily concentrated in the mid-range and premium tiers, **Mid-range (45K–85K)** laptops dominate the market, showing a clear consumer shift toward higher performance and better build quality rather than low-cost devices.
+
+### 2) **Price and RAM size relation**
 
 ![Price_by_RAM_Categories](plots/ram_vs_price.png) 
+
+- Laptop prices increase sharply with RAM capacity, with major jumps at 16GB and 32GB, indicating clear performance tiers and strong alignment between RAM configuration and customer segment.
 
 ### 3) Display quality strongly influences pricing (**QHD has highest median price**)
   
 ![Median_Price_by_Resolution_Type](plots/median_resolution.png)
 
+- Higher-resolution displays are strongly correlated with higher laptop prices.
+QHD laptops show the highest median price due to their association with gaming and creator-grade hardware, while UHD models occupy the premium productivity segment. FHD represents the mainstream sweet spot, and HD remains confined to entry-level devices.
+
 ### 4) Box plot of top 3 processor brand
 
 ![Top_3_Processor_Brand_Box_Plot](plots/Specs_score_vs_Processsor_Brand.png)
 
-### 5) Most common configuration:  **[Brand] + 16GB RAM + SSD**, representing **X%** of listings (actual value computed in pyfile) 
+- Intel and AMD deliver nearly identical median specs scores, showing strong competition in the mainstream market. AMD exhibits wider performance variability, spanning budget to high-end models, while Intel shows more high-performance outliers. Apple maintains consistent performance but in a narrower band, reflecting its premium ecosystem rather than raw hardware diversity.
+
+### 5) Most common configuration: The top configuration is **HP** with **16GB** RAM and **SSD** storage, appearing **150** times and accounting for **14.84%** of the market. 
+
 ### 6) **65.78%** of laptops feature a **dedicated GPU** 
 
 ---
