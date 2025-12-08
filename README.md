@@ -61,7 +61,7 @@ Created analytical features including:
 - UHD models occupy the premium productivity segment.
 - FHD represents the mainstream sweet spot, and HD remains confined to entry-level devices.
 
-### 4) Box plot of top 3 processor brand
+### 4) Box plot of top 3 Processor Brand
 
 ![Top_3_Processor_Brand_Box_Plot](plots/Specs_score_vs_Processsor_Brand.png)
 
