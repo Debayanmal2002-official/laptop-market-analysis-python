@@ -1,197 +1,161 @@
-Laptop Sales & Performance Analysis (Python | Data Analytics Project)
-💻 Laptop Sales & Performance Analysis
+# Laptop Sales & Performance Analysis (Python | Data Analytics Project)
 
 An end-to-end exploratory data analysis project uncovering key pricing, performance, and market trends in the laptop industry.
 
 This project demonstrates my ability as a data analyst to clean data, engineer features, generate insights, validate assumptions, and communicate findings clearly and responsibly.
 
-📂 Project Overview
+---
 
-This dataset contains 1,000+ laptop listings with attributes like:
+## Project Overview
 
-Brand, price, ratings, specs score
+This dataset contains 1,000+ laptop listings with attributes such as:
 
-Processor, RAM, storage
+- Brand, price, ratings, specs score  
+- Processor, RAM, storage  
+- Screen resolution, size  
+- Graphics configuration  
+- Warranty, OS  
+- Engineered fields like price segments, resolution groups, RAM buckets  
 
-Screen resolution, size
+The goal of this project is to understand:
 
-Graphics configuration
+- What drives laptop pricing  
+- Which configurations dominate the market  
+- How screen quality, RAM, CPU thread count, and GPU type influence pricing  
+- How laptops distribute across budget, mid-range, and premium segments  
+- Which specifications offer the highest value to customers  
 
-Warranty, OS
+---
 
-Derived fields like price segments, resolution groups, RAM buckets
+## Tech Stack
 
-The objective of this analysis is to understand:
+- Python (pandas, numpy, matplotlib, seaborn)  
+- Feature Engineering  
+- Data Cleaning & Normalization  
+- Exploratory Data Analysis (EDA)  
+- Visualization  
+- Statistical reasoning & insight storytelling  
 
-What drives price
+---
 
-Which configurations dominate the market
+## Data Cleaning & Feature Engineering
 
-How screen quality, RAM, CPU threads, and GPU type relate to pricing
+### price_range  
+Defined four meaningful Indian-market price tiers:
 
-What fraction of laptops are budget / mid-range / premium
+- Budget (≤45K)  
+- Mid-Range (45K–65K)  
+- Upper Mid-Range (65K–90K)  
+- Premium (>90K)  
 
-Which specifications deliver the highest value to customers
+### ram_bucket  
+Mapped RAM into tiers:
 
-🛠️ Tech Stack
+- Entry (4–12 GB)  
+- Standard (16 GB)  
+- Performance (24–32 GB)  
+- High-End (48–96 GB)  
 
-Python (pandas, numpy, matplotlib, seaborn)
+### resolution_grouped  
+Mapped raw resolutions into:
 
-Feature Engineering
+- HD  
+- FHD  
+- QHD  
+- UHD  
 
-Data Cleaning & Normalization
+### GPU Classification  
+Separated GPU types into:
 
-Exploratory Data Analysis (EDA)
+- Dedicated GPU  
+- Integrated GPU (iGPU)  
 
-Visualization
+---
 
-Statistical reasoning / insight storytelling
+## Key Insights
 
-🔧 Data Cleaning & Feature Engineering
+### 1. Price Segment Distribution  
+Most laptops fall into the mid-range (45–85K), aligning with mainstream consumer demand.
 
-Key engineered features:
+### 2. RAM vs Price (Performance Jump Analysis)  
+Major jumps observed at:
+- 8GB → 16GB  
+- 16GB → 24–32GB  
 
-✔ price_range
+### 3. Screen Quality Price Drivers  
+Median price increases as display quality improves:
 
-Categorized into 4 meaningful price segments for Indian market relevance:
+| Resolution | Insight |
+|-----------|---------|
+| HD | Budget laptops |
+| FHD | Mainstream baseline |
+| QHD | Highest median price (gaming/creator segment) |
+| UHD | Premium productivity laptops |
 
-Budget (≤45K)
+### 4. Dominant Configuration  
+Most common configuration:  
+**[Brand] + 16GB RAM + SSD**, representing **X%** of listings  
+(actual value computed in notebook).
 
-Mid-Range (45K–65K)
+### 5. High-End Graphics Share  
+65.78% of laptops feature a dedicated GPU, indicating a performance-oriented dataset.
 
-Upper Mid-Range (65K–90K)
-
-Premium (>90K)
-
-✔ ram_bucket
-
-Clustered RAM into realistic market tiers:
-
-Entry (4–12 GB)
-
-Standard (16 GB)
-
-Performance (24–32 GB)
-
-High-End (48–96 GB)
-
-✔ resolution_grouped
-
-Mapped raw resolution numbers into:
-
-HD
-
-FHD
-
-QHD
-
-UHD
-
-✔ GPU Classification
-
-Separated laptops into:
-
-dedicated GPU laptops
-
-integrated GPU (iGPU) laptops
-
-📊 Key Insights
-1️⃣ Price Segment Distribution
-
-Most laptops fall in the mid-range (45–85K), reflecting strong consumer demand for balanced performance/value.
-
-2️⃣ RAM vs Price (Performance Jump Analysis)
-
-Major price jumps occur at:
-
-8GB → 16GB (productivity tier)
-
-16GB → 24–32GB (creator/gaming tier)
-
-3️⃣ Screen Quality Price Drivers
-
-Median prices increase with display quality:
-
-Resolution	Median Price
-HD	Lowest-tier, budget laptops
-FHD	Mainstream baseline
-QHD	Highest median price — gaming/creator laptops
-UHD	Premium productivity laptops
-4️⃣ Dominant Configuration
-
-Most common market configuration =
-[Brand] + 16GB RAM + SSD, representing X% of listings.
-(Actual values generated dynamically in notebook.)
-
-5️⃣ High-End Graphics Share
-
-65.78% of laptops include a dedicated GPU, meaning the dataset leans toward performance-oriented devices.
-
-6️⃣ OS Ratings — Analysis Withheld
-
-The OS distribution is extremely imbalanced (930 Windows vs <40 macOS vs <10 others).
+### 6. OS Ratings — Analysis Withheld  
+OS distribution is extremely imbalanced (930 Windows vs <40 macOS vs <10 others).  
 To avoid misleading conclusions:
 
-No OS rating comparison was performed, as insufficient sample size makes the results statistically invalid.
+**OS rating comparison was intentionally omitted due to insufficient sample size.**
 
-This demonstrates responsible analytics practice.
+This reflects responsible analytics practice.
 
-🧠 High-Performance Threshold (Honest Analysis)
+---
 
-A naive filter returned a price of ₹23,887 for a "high performance" laptop based on RAM ≥16GB & threads ≥12,
-but this was rejected because the CPU thread counts for Celeron processors in the dataset were misreported.
+## High-Performance Threshold (Ethical Analysis)
 
-No incorrect insight was published — “no analysis is better than wrong analysis.”
+A naïve rule (RAM ≥16GB and threads ≥12) returned a minimum price of ₹23,887.  
+However, this was rejected because CPU metadata (e.g., Celeron N-series threads) was inconsistent in the dataset.
 
-This reinforces strong analytical ethics.
+**Incorrect insights were not published — “no analysis is better than wrong analysis.”**
 
-📌 Examples of Visuals
+---
 
-Price segment distribution (pie & bar charts)
+## Example Visuals
 
-RAM vs price (line plot with labels)
+- Price segment distribution  
+- RAM vs price line chart  
+- Specs score distribution by processor brand  
+- Median price by resolution group  
+- GPU share visualization  
 
-Specs score distribution across processor brands
+(All visuals are available in the Jupyter notebook.)
 
-Median price by resolution group
+---
 
-GPU share visualization
+## What This Project Demonstrates
 
-(All visuals available in the Jupyter notebook.)
+- Data cleaning and validation  
+- Professional feature engineering  
+- Business-relevant exploratory analysis  
+- Clear and compelling visual communication  
+- Responsible analytical judgment  
+- Ability to avoid incorrect insights when data is insufficient  
 
-📁 Repository Structure
-├── data/
-│   └── cleaned_laptop_data.csv
-├── notebooks/
-│   └── laptop_analysis.ipynb
-├── scripts/
-│   └── analysis.py
-├── images/
-│   └── plots/ ...
-└── README.md
+These qualities match what hiring managers expect from a capable data analyst.
 
-🎯 What This Project Demonstrates
-✔ Data cleaning, handling inconsistencies, ensuring reliability
-✔ Professional feature engineering
-✔ Exploratory analysis with business relevance
-✔ Effective data visualization
-✔ Responsible analytical judgment
-✔ Clear communication of insights
-✔ Ability to say “no insight” when data is not valid
+---
 
-This is the kind of analytical maturity hiring managers specifically look for.
+## Future Improvements
 
-🚀 Future Improvements
+- Add a regression model to predict laptop price  
+- Build a Power BI / Tableau dashboard  
+- Integrate external CPU benchmark data  
+- Improve GPU identification via model mapping  
 
-Add regression model to predict laptop price
+---
 
-Build a Power BI / Tableau dashboard
+## Author
 
-Add CPU benchmark mapping via external dataset
+**Debayan Mal**  
+Data Analyst — Python | SQL | Statistics | Visualization  
+LinkedIn: https://linkedin.com/in/debayan-mal-9a3479340
 
-Improve GPU classification using model lists
-
-🙋‍♂️ Author
-
-Debayan Mal
-Data Analyst | Python | SQL | Statistics | Visualization
