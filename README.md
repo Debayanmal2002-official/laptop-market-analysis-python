@@ -37,23 +37,25 @@ Created analytical features including:
 ## Key Insights from EDA
 
 - **Mid-range (45K–85K)** laptops dominate the market
-![price_range_pie](plot/price_range_pie.png)
-- Major price jumps occur at **16GB RAM** and **24–32GB RAM**  
-- Display quality strongly influences pricing (**QHD has highest median price**)  
-- **65.78%** of laptops feature a **dedicated GPU**  
-- OS rating analysis was **intentionally skipped** due to extreme data imbalance  
-  (*“No analysis is better than wrong analysis.”*)
+![Price_range_Distribution](plots/price_range_pie.png)
+- Major price jumps occur at **16GB RAM** and **24–32GB RAM**
+![Price_by_RAM_Categories](plots/ram_vs_price.png) 
+- Display quality strongly influences pricing (**QHD has highest median price**)
+![Median_Price_by_Resolution_Type](plots/median_resolution.png)
+- Box plot of top 3 processor brand
+![Top_3_Processor_Brand_Box_Plot](plots/Specs_score_vs_Processsor_Brand.png)
+- Most common configuration:  **[Brand] + 16GB RAM + SSD**, representing **X%** of listings  
+- **65.78%** of laptops feature a **dedicated GPU** 
 
 ---
 ## Ethical Analysis Note
 
-A filter-based “high performance threshold” falsely classified a ₹23,887 laptop due to incorrect CPU metadata in the Kaggle dataset.  
-The insight was intentionally **discarded**, demonstrating responsible analytical judgment.
+Many additional data analysis was done, but not shown to incompleteness of data.
+Example: A filter-based “high performance threshold” falsely classified a ₹23,887 laptop due to incorrect CPU metadata in the Kaggle dataset.  
+The insight was intentionally **discarded**, demonstrating responsible analytical judgment. Also OS rating analysis was **intentionally skipped** due to extreme data imbalance  
+  (*“No analysis is better than wrong analysis.”*)
 
 ---
-
-
-
 ## Author
 
 **Debayan Mal**  
