@@ -1,4 +1,4 @@
-# Laptop Sales & Performance Analysis (Python | Data Analytics)
+# Laptop Market & Performance Analysis (Python | Data Analytics)
 
 An end-to-end data cleaning and exploratory analysis project based on a messy Kaggle laptop dataset. 
 
@@ -11,12 +11,15 @@ This project demonstrates my ability to work with **real-world messy data**, bui
 ---
 ## Tech Stack
 
-- Python (pandas, numpy, matplotlib, seaborn)  
-- Feature Engineering  
-- Data Cleaning & Normalization  
-- Exploratory Data Analysis (EDA)  
-- Visualization  
-- Statistical reasoning & insight storytelling
+- Python (pandas, numpy)
+
+- Data Cleaning & Feature Engineering
+
+- Exploratory Data Analysis (EDA)
+
+- Matplotlib & Seaborn
+
+- Statistical reasoning
 
 ---
 ## Key Steps
@@ -35,6 +38,15 @@ Created analytical features including:
 - `resolution_grouped`  
 - GPU classification (`is_igpu`, `has_dedicated_gpu`)  
 
+---
+## Data Quality Challenges Addressed
+
+- Inconsistent text-based specifications (RAM, Storage, CPU, GPU)
+- Mixed units and vendor-specific naming conventions
+- Missing values in key hardware attributes
+- Misleading categorical labels in OS and processor data
+- Dataset bias toward gaming and premium configurations
+  
 ---
 ## Key Insights from EDA
 
@@ -71,15 +83,15 @@ Created analytical features including:
 - Apple maintains consistent performance but in a narrower band, reflecting its premium ecosystem rather than raw hardware diversity.
 
 ### 5) Most common configuration: 
-The top configuration is **HP** with **16GB** RAM and **SSD** storage, appearing **150** times and accounting for **14.84%** of the market. 
+The top configuration, within this dataset, is **HP** with **16GB** RAM and **SSD** storage, appearing **150** times and accounting for **14.84%** of the market. 
 
 ### 6) GPU Market Share
-**65.78%** of laptops feature a **dedicated GPU** 
+**65.78%** of laptops feature a **dedicated GPU**, indicating a strong gaming/creator bias in the sampled market. 
 
 ---
 ## Ethical Analysis Note
 
-Many additional data analysis was done, but not shown to incompleteness of data.
+Several additional analyses were explored but intentionally excluded due to data incompleteness and imbalance.
 
 Example: A rule-based “high performance threshold” initially classified a ₹23,887 laptop as high-performance due to incorrect CPU thread metadata in the Kaggle dataset.
 This insight was intentionally discarded, demonstrating responsible analytical judgment.
