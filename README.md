@@ -89,6 +89,23 @@ The top configuration, within this dataset, is **HP** with **16GB** RAM and **SS
 **65.78%** of laptops feature a **dedicated GPU**, indicating a strong gaming/creator bias in the sampled market. 
 
 ---
+## Laptop Market Analysis Dashboard
+This repository contains the interactive Power BI dashboard used to analyze key trends, brand performance, and pricing strategies within the laptop market.
+
+git ls-files Laptop_Market_Analysis_Dashboard.pbix
+
+## Dashboard Summary
+The analysis focuses on providing a data-driven view of the laptop landscape, highlighting areas of opportunity and risk. Key insights available in the report include:
+
+- Market Segmentation: A breakdown of market share across different price ranges (Budget, Mid-Range, Premium).
+
+- Value Proposition Analysis: A scatter plot comparing Average Price vs. Average Specs Score by brand to identify high-value performers.
+
+- Performance Deep Dive: Analysis of average pricing, specifications, and ratings per brand via an interactive bar chart.
+
+- Processor Dominance: Identification of the top processor brand and its overall market share.
+
+---
 ## Ethical Analysis Note
 
 Several additional analyses were explored but intentionally excluded due to data incompleteness and imbalance.
