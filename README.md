@@ -114,7 +114,7 @@ The primary Power BI file is available for download. To inspect the data model, 
 | :--- | :--- |
 | `Laptop_Market_Analysis_Dashboard.pbix` | The main Power BI Desktop report. |
 
-![Laptop Market Analysis Dashboard Final Layout](dashboard/dashboard_preview.png)
+![Laptop Market Analysis Dashboard Final Layout](dashboard/preview.png)
 ---
 ## Ethical Analysis Note
 
