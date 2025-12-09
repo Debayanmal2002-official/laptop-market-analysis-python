@@ -89,7 +89,7 @@ The top configuration, within this dataset, is **HP** with **16GB** RAM and **SS
 **65.78%** of laptops feature a **dedicated GPU**, indicating a strong gaming/creator bias in the sampled market. 
 
 ---
-# 💻 Laptop Market Analysis Dashboard
+## Laptop Market Analysis Dashboard
 
 This repository contains the interactive Power BI dashboard used to analyze key trends, brand performance, and pricing strategies within the laptop market.
 
@@ -106,7 +106,7 @@ The analysis focuses on providing a data-driven view of the laptop landscape, hi
 
 ---
 
-## 📥 Accessing the Report File
+## Accessing the Report File
 
 The primary Power BI file is available for download. To inspect the data model, measures, and calculated columns, please open this file using Power BI Desktop.
 
@@ -114,6 +114,7 @@ The primary Power BI file is available for download. To inspect the data model, 
 | :--- | :--- |
 | `Laptop_Market_Analysis_Dashboard.pbix` | The main Power BI Desktop report. |
 
+![Laptop Market Analysis Dashboard Final Layout](dashboard/dashboard_preview.png)
 ---
 ## Ethical Analysis Note
 
